@@ -28,7 +28,7 @@ app.get( '/', (req,res) => {
 })
 
 // todo routes
-app.use('/api/todo' , require("./routes//todo/todoRoutes"))
+app.use('/api/todo' , require("./routes/todo/todoRoutes"))
 
 // Server
 app.listen(PORT,()=> {
