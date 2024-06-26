@@ -9,7 +9,7 @@ const getTodos =  async (req, res) => {
 // getTodo
 const getTodo = async(req, res) => {
     const todo = await Todo.findById(req.params.id)
-    if (!Todo){
+    if (!todo){
         res.status(404);
         throw new Error("Todo Not Founed")
     }
