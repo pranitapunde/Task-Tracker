@@ -25,7 +25,6 @@ const createTodo = async (req, res) => {
     res.status(400);
      throw new Error("please Fill All Details")
    }
-
    const newTodo = await Todo.create({
     title, 
     description,
